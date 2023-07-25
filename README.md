@@ -1,4 +1,5 @@
 # ERA_6
+# part 1  
 # Backpropogation in network:
 
 input: 2 neurons
@@ -13,6 +14,13 @@ output : 2 neurons
 # Equations 
 
 <img width="1027" alt="Screenshot 2023-07-24 at 5 45 36 AM" src="https://github.com/katipallyvig8899/ERA_6/assets/45558037/46bd64af-e790-45fb-b658-7b96ee86279e">
+Initially  hidden layer it took the input from input layer and by using initial weights, hidden layer neurons get temporary hidden value, by applying activation function hidden layer outputs would be updated. Then pass to the output layer. After the output layer each output related to corresponding error(difference between target and network predicted output). By backpropogating loss value should be minimized, weights will be updated.By using different learning rates, we observed by increasing the learning rate convergence fast but for complex data when learning rate small then loss converge but slow process.
+
+<img width="736" alt="Screenshot 2023-07-25 at 6 44 35 AM" src="https://github.com/katipallyvig8899/ERA_6/assets/45558037/a27bc0ee-5cea-4465-8b66-4202af1e1b8e">
+
+# part2
+
+
 
 # Network code 
 class Net(nn.Module):
